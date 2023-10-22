@@ -204,7 +204,7 @@ li.staff {
 .teamlist {
     display: flex;
     justify-content: space-around;
-  }
+}
 .teamlist-icon {
     background-color: var(--IRIS);
     fill: var(--WHITE);
@@ -260,7 +260,6 @@ li.staff {
     background-color: var(--WHITE);
     fill: var(--IRIS);
 }
-
 /*end of icon styling*/
 /*portfolio*/
 .portbutton {
@@ -269,7 +268,7 @@ li.staff {
     gap: 24px;
     padding-top: 120px;
     padding-bottom: 50px;
-  }
+}
 .click {
     background-color: var(--CORNFLOWER);
         color: var(--IRIS);
@@ -282,11 +281,11 @@ li.staff {
         border: 1px;
         border-radius: 4px;
         padding: 12px 24px;
-  }
+}
   .click:hover, .click:focus {
     background-color: var(--IRIS);
     color: var(--CORNFLOWER);
-  }
+}
 .portmain ul {
     width:100%;
     flex-wrap: wrap;
@@ -295,18 +294,15 @@ li.staff {
 }
 .portmain li {
     width: 25%;
- }
+}
  .project-portfolio {
     border-radius: 1%;
     height: 420px;
-    
- }
+}
 .project-portfolio:hover, .project-portfolio:focus {
 box-shadow: 1px 2px 6px 1px #2E2F4229;
 background-color: var(--WHITE);
-
 } 
-
 .project-caption {
     margin-left: 15px;
 }
