@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>homework #4</title>
+    <title>homework #5</title>
   <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +26,7 @@
         <nav>
             <ul class="menu-main menu">
               <li>
-                <a class="menu1 links" href="https://www.figma.com/file/B1m2uk25m1eAgroESAuM2g/Web-Studio-(Version-3.0)?type=design&node-id=0-1&mode=design&t=raKnELDXutW6jLfi-0">Studio</a>
+                <a class="menu1 links active" href="index.html">Studio</a>
               </li>
               <li>
                 <a class="menu2 links" href="portfolio.html">Portfolio</a>
@@ -52,9 +52,14 @@
       <section class="section1">
       <h1 class="section1-header">Effective Solutions<br>
        for Your Business</h1>
-       <button class="section1-button" type="button">Order Service</button>
-       </section>
-        <section class="section2 subsections">
+       <button class="section1-button data-modal-open" type="button">Order Service</button>
+      <div class="modal">
+        <div class="data-modal">
+            <button type="button" class="close-button data-modal-close">&times;</button>
+        </div>
+      </div>
+      </section>
+       <section class="section2 subsections">
           <div class="section-list margin">
           <ul class="section2-list">
              <li class="ethics">
@@ -223,7 +228,6 @@
              </li>  
             </ul>
        </section>
-
        <section class="customers subsections">
           <h2 class="section4-team section-title">Customers</h2>
           <ul class="customer-links">
@@ -273,7 +277,6 @@
        </section>
 </main>
 <!--end of main tag-->
-
 <!--start of footer tag-->
 <footer class="container footer">
   <section class="footer-section">
@@ -310,7 +313,7 @@
   </section>
  </footer>
 <!--end of footer tag-->
-
+<script src="./js/modal.js"></script>
 </body>
 
 

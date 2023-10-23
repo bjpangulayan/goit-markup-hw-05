@@ -89,6 +89,19 @@ body {
     letter-spacing: 2%;
     gap: 40px;
 }
+.active {
+    color: var(--OCEAN);
+}
+.active::after {
+    content: " ";
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: var(--IRIS);
+    position: relative;
+    top: 16.5px;
+}
 /*end of header section*/
 /*main section*/
 .section-list, .section2-pic {
@@ -125,6 +138,40 @@ body {
   border-radius: 4px;
   padding: 16px 32px;
 }
+.modal {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.data-modal {
+    background-color: var(--WHITE);
+    border-radius: 4px;
+    width:408px;
+    height:620px;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    position: relative;
+    top: -145px;
+}
+.close-button {
+    position: relative;
+    top: 20px;
+    right: 25px;
+    border-radius: 24px;
+}
+.is-hidden {
+    visibility:hidden;
+}
+
 ul.section2-list {
     list-style: none;
     display: flex;
@@ -282,7 +329,7 @@ li.staff {
         border-radius: 4px;
         padding: 12px 24px;
 }
-  .click:hover, .click:focus {
+.click:hover, .click:focus {
     background-color: var(--IRIS);
     color: var(--CORNFLOWER);
 }
@@ -290,7 +337,6 @@ li.staff {
     width:100%;
     flex-wrap: wrap;
     padding-bottom: 120px;
-   
 }
 .portmain li {
     width: 25%;
@@ -298,6 +344,7 @@ li.staff {
  .project-portfolio {
     border-radius: 1%;
     height: 420px;
+    overflow: hidden;
 }
 .project-portfolio:hover, .project-portfolio:focus {
 box-shadow: 1px 2px 6px 1px #2E2F4229;
@@ -306,3 +353,26 @@ background-color: var(--WHITE);
 .project-caption {
     margin-left: 15px;
 }
+.project-img {
+    position: relative;
+    overflow: hidden;
+}
+.project-img-caption {
+    position: absolute;
+    background-color: rgba(77, 90, 229, 1);
+    color: var(--WHITE);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+ }
+ .project-portfolio:hover .project-img-caption {
+    opacity: 1;
+    transform: translateY(0);
+ }
+ .project-img-caption p {
+    padding: 40px 32px;
+ }
